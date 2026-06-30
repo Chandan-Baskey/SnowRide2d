@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class CharSelection : MonoBehaviour
 {
     [SerializeField] GameObject scoreCanvas;
-    [SerializeField] GameObject dino;
-    [SerializeField] GameObject frog;
+    [SerializeField] GameObject Srak;
+    [SerializeField] GameObject Chita;
+    [SerializeField] GameObject Wolf;
     void Start()
     {
         Time.timeScale = 0;
@@ -20,14 +21,19 @@ public class CharSelection : MonoBehaviour
         gameObject.SetActive(false);
     }
       
-    public void ChooseDino()
+    public void ChooseSrak()
     {
-        dino.SetActive(true);
+        Srak.SetActive(true);
         BeginGame();
     }
-    public void Choosefrog()
+    public void ChooseChita()
     {
-        frog.SetActive(true);
+        Chita.SetActive(true);
+        BeginGame();
+    }
+    public void ChooseWolf()
+    {
+        Wolf.SetActive(true);
         BeginGame();
     }
     public void Back()
